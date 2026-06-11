@@ -1,3 +1,11 @@
 spring:
-  application:
-    name: Prova2
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prova2-bd
+    password: Sen@c2023
+    username: postgres
+    driverClassName: org.postgresql.Driver
