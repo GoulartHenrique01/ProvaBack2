@@ -44,6 +44,7 @@ public class ProvaService {
     public void deletar(Long id){
         if(provaRepositorio.existsById(id)){
             provaRepositorio.deleteById(id);
+            return;
         }
         throw new RuntimeException("Prova não encontrada");
     }
